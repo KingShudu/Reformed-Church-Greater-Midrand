@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us - Reformed Church Greater Midrand</title>
+    <meta name="description" content="Learn about Reformed Church Greater Midrand and our mission, vision, and values.">
+    <meta name="keywords" content="Reformed Church, Greater Midrand, about us, mission, vision, values">
+    <!-- Add any other necessary meta tags, stylesheets, or scripts here -->
+    <link rel="stylesheet" href="styles.css"> <!-- Example: replace "styles.css" with your actual stylesheet file -->
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <!-- You can add additional header content here if needed -->
+    </header>
+    <nav>
+        <!-- Navigation links can be added here if needed -->
+    </nav>
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>Insert mission statement here...</p>
+        </section>
+        <section>
+            <h2>Our Vision</h2>
+            <p>Insert vision statement here...</p>
+        </section>
+        <section>
+            <h2>Our Values</h2>
+            <ul>
+                <li>Value 1</li>
+                <li>Value 2</li>
+                <li>Value 3</li>
+                <!-- Add more values as needed -->
+            </ul>
+        </section>
+        <section>
+            <h2>Our History</h2>
+            <p>Provide a brief history of Reformed Church Greater Midrand...</p>
+        </section>
+        <section>
+            <h2>Leadership Team</h2>
+            <p>Introduce key leaders and pastors...</p>
+        </section>
+        <!-- Add more sections about your church as needed -->
+    </main>
+    <footer>
+        <!-- Footer content can be added here -->
+    </footer>
+</body>
+</html>
