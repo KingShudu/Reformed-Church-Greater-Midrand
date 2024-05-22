@@ -3,42 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pastors - Reformed Church Greater Midrand</title>
-    <meta name="description" content="Learn about the pastors of Reformed Church Greater Midrand.">
-    <meta name="keywords" content="Reformed Church, Greater Midrand, pastors, leadership">
-    <!-- Add any other necessary meta tags, stylesheets, or scripts here -->
-    <link rel="stylesheet" href="styles.css"> <!-- Example: replace "styles.css" with your actual stylesheet file -->
+    <title>Pastors - Church Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Our Pastors</h1>
-        <!-- You can add additional header content here if needed -->
+        <h1>Our Pastor</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pastors.html">Pastors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="institutions.html">Institutions</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <!-- Navigation links can be added here if needed -->
-    </nav>
-    <main>
-        <section>
-            <h2>Senior Pastor</h2>
-            <div>
-                <h3>John Doe</h3>
-                <p>Bio: John Doe is the senior pastor at Reformed Church Greater Midrand. He has been serving the congregation for over 10 years...</p>
-                <p>Contact: Email: john.doe@example.com | Phone: (123) 456-7890</p>
-            </div>
-        </section>
-        <section>
-            <h2>Associate Pastor</h2>
-            <div>
-                <h3>Jane Smith</h3>
-                <p>Bio: Jane Smith is the associate pastor at Reformed Church Greater Midrand. She has a passion for youth ministry...</p>
-                <p>Contact: Email: jane.smith@example.com | Phone: (987) 654-3210</p>
-            </div>
-        </section>
-        <!-- Add more sections for additional pastors if needed -->
-    </main>
+
+    <section id="pastors">
+        <h2>Our Pastor</h2>
+        <div class="pastor-info">
+            <img src="pastor.jpg" alt="Pastor Image">
+            <p>Details about the current pastor...</p>
+        </div>
+    </section>
+
     <footer>
-        <!-- Footer content can be added here -->
+        <p>&copy; 2024 Our Church. All rights reserved.</p>
     </footer>
 </body>
 </html>
