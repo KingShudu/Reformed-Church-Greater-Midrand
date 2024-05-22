@@ -3,14 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Events - Reformed Church Greater Midrand</title>
-    <meta name="description" content="Stay updated with the latest events at Reformed Church Greater Midrand.">
-    <meta name="keywords" content="Reformed Church, Greater Midrand, events, community">
-    <!-- Add any other necessary meta tags, stylesheets, or scripts here -->
-    <link rel="stylesheet" href="styles.css"> <!-- Example: replace "styles.css" with your actual stylesheet file -->
+    <title>Events - Church Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Body content will be added here -->
+    <header>
+        <h1>Events</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pastors.html">Pastors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="institutions.html">Institutions</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="events">
+        <h2>Events</h2>
+        <div class="event-dropdown">
+            <select id="event-select">
+                <option value="event1">Event 1</option>
+                <option value="event2">Event 2</option>
+                <option value="event3">Event 3</option>
+            </select>
+        </div>
+        <div class="event-slideshow">
+            <!-- Slideshow images for events -->
+            <div class="eventSlides fade">
+                <img src="event1.jpg" style="width:100%">
+            </div>
+            <div class="eventSlides fade">
+                <img src="event2.jpg" style="width:100%">
+            </div>
+            <div class="eventSlides fade">
+                <img src="event3.jpg" style="width:100%">
+            </div>
+        </div>
+        <div class="calendar">
+            <h3>Calendar</h3>
+            <p>Calendar with clickable events...</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Our Church. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
