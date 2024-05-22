@@ -3,14 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Reformed Church Greater Midrand</title>
-    <meta name="description" content="Welcome to the Reformed Church Greater Midrand. Join us in worship and community.">
-    <meta name="keywords" content="Reformed Church, Greater Midrand, worship, community">
+    <title>Church Website</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Add any other necessary meta tags, stylesheets, or scripts here -->
 </head>
 <body>
-    <!-- Content of your website goes here -->
+    <header>
+        <h1>Welcome to Our Church</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pastors.html">Pastors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="institutions.html">Institutions</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="slideshow-container">
+            <!-- Slideshow images -->
+            <div class="mySlides fade">
+                <img src="slide1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="slide2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="slide3.jpg" style="width:100%">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Our Church. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
