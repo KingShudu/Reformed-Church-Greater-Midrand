@@ -3,36 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Location - Reformed Church Greater Midrand</title>
-    <meta name="description" content="Find directions and information about the location of Reformed Church Greater Midrand.">
-    <meta name="keywords" content="Reformed Church, Greater Midrand, location, directions">
-    <!-- Add any other necessary meta tags, stylesheets, or scripts here -->
-    <link rel="stylesheet" href="styles.css"> <!-- Example: replace "styles.css" with your actual stylesheet file -->
+    <title>Locations - Church Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </head>
 <body>
     <header>
-        <h1>Location</h1>
-        <!-- You can add additional header content here if needed -->
+        <h1>Our Locations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pastors.html">Pastors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="institutions.html">Institutions</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <!-- Navigation links can be added here if needed -->
-    </nav>
-    <main>
-        <section>
-            <h2>Our Address</h2>
-            <p>Reformed Church Greater Midrand</p>
-            <p>123 Church Street</p>
-            <p>Midrand, Gauteng, South Africa</p>
-        </section>
-        <section>
-            <h2>Map and Directions</h2>
-            <!-- Embed Google Maps or another mapping service here -->
-            <!-- Example: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.053653684855!2d28.117731315024223!3d-25.986589583521865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955ce9f1f2b1a9%3A0x5dd5e15c5db711c!2sReformed%20Church%20Greater%20Midrand!5e0!3m2!1sen!2sza!4v1648555511779!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-        </section>
-    </main>
+
+    <section id="locations">
+        <h2>Our Locations</h2>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var churchLocation = {lat: -34.397, lng: 150.644};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: churchLocation
+                });
+                var marker = new google.maps.Marker({
+                    position: churchLocation,
+                    map: map
+                });
+            }
+        </script>
+    </section>
+
     <footer>
-        <!-- Footer content can be added here -->
+        <p>&copy; 2024 Our Church. All rights reserved.</p>
     </footer>
 </body>
 </html>
