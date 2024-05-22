@@ -3,53 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Institutions - Reformed Church Greater Midrand</title>
-    <meta name="description" content="Explore the institutions associated with Reformed Church Greater Midrand.">
-    <meta name="keywords" content="Reformed Church, Greater Midrand, institutions, affiliated organizations">
-    <!-- Add any other necessary meta tags, stylesheets, or scripts here -->
-    <link rel="stylesheet" href="styles.css"> <!-- Example: replace "styles.css" with your actual stylesheet file -->
+    <title>Institutions - Church Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Institutions</h1>
-        <!-- You can add additional header content here if needed -->
+        <h1>Institutions We Support</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pastors.html">Pastors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="institutions.html">Institutions</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <!-- Navigation links can be added here if needed -->
-    </nav>
-    <main>
-        <section>
-            <h2>Christian Schools</h2>
-            <ul>
-                <li>
-                    <h3>Midrand Christian School</h3>
-                    <p>Description: Midrand Christian School is a private Christian institution providing quality education...</p>
-                    <p>Contact: Email: info@midrandchristianschool.org | Phone: (123) 456-7890</p>
-                </li>
-                <li>
-                    <h3>Grace Academy</h3>
-                    <p>Description: Grace Academy offers a Christ-centered education for students from kindergarten to high school...</p>
-                    <p>Contact: Email: admissions@graceacademy.co.za | Phone: (987) 654-3210</p>
-                </li>
-                <!-- Add more Christian schools as needed -->
-            </ul>
-        </section>
-        <section>
-            <h2>Community Outreach Programs</h2>
-            <ul>
-                <li>
-                    <h3>Midrand Community Outreach</h3>
-                    <p>Description: Midrand Community Outreach provides food, shelter, and support to families in need in the community...</p>
-                    <p>Contact: Email: info@midrandcommunityoutreach.org | Phone: (123) 456-7890</p>
-                </li>
-                <!-- Add more community outreach programs as needed -->
-            </ul>
-        </section>
-        <!-- Add more sections for other affiliated institutions if needed -->
-    </main>
+
+    <section id="institutions">
+        <h2>Institutions We Support</h2>
+        <div class="institution-details">
+            <h3>Institution 1</h3>
+            <p>Details about Institution 1...</p>
+            <h3>Institution 2</h3>
+            <p>Details about Institution 2...</p>
+            <h3>Institution 3</h3>
+            <p>Details about Institution 3...</p>
+        </div>
+        <div class="funding">
+            <h3>Support Our Institutions</h3>
+            <button>Donate</button>
+        </div>
+    </section>
+
     <footer>
-        <!-- Footer content can be added here -->
+        <p>&copy; 2024 Our Church. All rights reserved.</p>
     </footer>
 </body>
 </html>
