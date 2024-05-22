@@ -3,51 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Us - Reformed Church Greater Midrand</title>
-    <meta name="description" content="Learn about Reformed Church Greater Midrand and our mission, vision, and values.">
-    <meta name="keywords" content="Reformed Church, Greater Midrand, about us, mission, vision, values">
-    <!-- Add any other necessary meta tags, stylesheets, or scripts here -->
-    <link rel="stylesheet" href="styles.css"> <!-- Example: replace "styles.css" with your actual stylesheet file -->
+    <title>About - Church Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>About Us</h1>
-        <!-- You can add additional header content here if needed -->
-    </header>
-    <nav>
-        <!-- Navigation links can be added here if needed -->
-    </nav>
-    <main>
-        <section>
-            <h2>Our Mission</h2>
-            <p>Insert mission statement here...</p>
-        </section>
-        <section>
-            <h2>Our Vision</h2>
-            <p>Insert vision statement here...</p>
-        </section>
-        <section>
-            <h2>Our Values</h2>
+        <nav>
             <ul>
-                <li>Value 1</li>
-                <li>Value 2</li>
-                <li>Value 3</li>
-                <!-- Add more values as needed -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pastors.html">Pastors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="institutions.html">Institutions</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
             </ul>
-        </section>
-        <section>
-            <h2>Our History</h2>
-            <p>Provide a brief history of Reformed Church Greater Midrand...</p>
-        </section>
-        <section>
-            <h2>Leadership Team</h2>
-            <p>Introduce key leaders and pastors...</p>
-        </section>
-        <!-- Add more sections about your church as needed -->
-    </main>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="ministries">
+            <h3>Ministries</h3>
+            <p>Men, Women, Youth, and Sunday School (Kids)</p>
+        </div>
+        <div class="history">
+            <h3>Our History</h3>
+            <p>Details about the history of the church...</p>
+        </div>
+        <div class="beliefs">
+            <h3>Our Beliefs</h3>
+            <p>Details about the faith of the congregation...</p>
+        </div>
+    </section>
+
     <footer>
-        <!-- Footer content can be added here -->
+        <p>&copy; 2024 Our Church. All rights reserved.</p>
     </footer>
 </body>
 </html>
