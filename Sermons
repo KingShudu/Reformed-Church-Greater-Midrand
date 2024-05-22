@@ -3,15 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sermons - Reformed Church Greater Midrand</title>
-    <meta name="description" content="Welcome to the Reformed Church Greater Midrand. Join us in worship and community.">
-    <meta name="keywords" content="Reformed Church, Greater Midrand, worship, community">
-    <!-- Specify UTF-8 charset for sermons -->
-    <meta charset="UTF-8" data-for="sermons">
-    <!-- Add any other necessary meta tags, stylesheets, or scripts here -->
+    <title>Sermons - Church Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Content of your website goes here -->
+    <header>
+        <h1>Sermons</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pastors.html">Pastors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="institutions.html">Institutions</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sermons">
+        <h2>Sermons</h2>
+        <div class="sermon-links">
+            <a href="https://www.youtube.com/link-to-sermon1">Sermon 1</a>
+            <a href="https://www.youtube.com/link-to-sermon2">Sermon 2</a>
+            <a href="https://www.youtube.com/link-to-sermon3">Sermon 3</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Our Church. All rights reserved.</p>
+    </footer>
 </body>
 </html>
