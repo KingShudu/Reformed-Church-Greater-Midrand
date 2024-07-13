@@ -3,13 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locations - Church Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <title>Location</title>
 </head>
 <body>
-    <header>
-        <h1>Our Locations</h1>
+   <header></header>
+    <img src = "Images/Greater midrand logo .png" alt = "image">
+    <h1>Greater Midrand</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pastors.html">Pastors</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="institutions.html">Institutions</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+        </ul>
+    </nav>
+    
+  <br/>
+  <hl><em>Location</em></hl>
+    <br/>
+</header>
+<main>
+    <img src = "Images/Background for location text.png" alt = "image">
+<p>Welcome to Reformed Church
+           Greater Midrand</p>
+    <p>where to find us!
+         Our Locations</p>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Read more..</p>
+    <img src = "Images/church ev5.png" alt = "image">
+</main>
+    <footer>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -22,28 +48,11 @@
                 <li><a href="newsletter.html">Newsletter</a></li>
             </ul>
         </nav>
-    </header>
-
-    <section id="locations">
-        <h2>Our Locations</h2>
-        <div id="map"></div>
-        <script>
-            function initMap() {
-                var churchLocation = {lat: -34.397, lng: 150.644};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 15,
-                    center: churchLocation
-                });
-                var marker = new google.maps.Marker({
-                    position: churchLocation,
-                    map: map
-                });
-            }
-        </script>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Our Church. All rights reserved.</p>
-    </footer>
+        <p>Contact information</p>
+        <p>+254 700 000 000</p>
+        <p><em>Copyright 2022. All Rights Reserved.</em></p>
+</footer>
 </body>
 </html>
+
+        
