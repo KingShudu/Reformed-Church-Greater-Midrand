@@ -2,83 +2,107 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-nav ul {
+header .logo img {
+    width: 50px;
+    height: auto;
+}
+
+header nav ul {
     list-style: none;
+    display: flex;
+    margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
+header nav ul li {
+    margin-right: 20px;
 }
 
-nav ul li a {
-    color: white;
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
 }
 
-section {
-    padding: 2rem;
+main {
+    padding: 20px;
     text-align: center;
 }
 
-#map {
-    height: 400px;
-    width: 100%;
+main .about {
+    margin: 20px 0;
 }
 
-.slideshow-container, .event-slideshow {
+main .about h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.grid-item img {
     max-width: 100%;
-    position: relative;
-    margin: auto;
-}
-
-.mySlides, .eventSlides {
-    display: none;
-}
-
-img {
-    vertical-align: middle;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-.pastor-info img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    height: auto;
 }
 
 footer {
-    background: #333;
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
+    padding: 20px;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .footer-content .links ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-content .links ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-content .links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-content .social-icons a img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+footer p {
+    margin: 20px 0 0;
 }
