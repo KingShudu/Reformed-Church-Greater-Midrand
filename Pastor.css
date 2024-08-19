@@ -82,3 +82,15 @@ footer {
         margin: 0.5rem 0;
     }
 }
+
+#pastorsImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+}
+
+#ChurchLogo{
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+}
