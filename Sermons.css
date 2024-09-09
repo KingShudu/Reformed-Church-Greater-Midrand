@@ -2,28 +2,68 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #333;
-    color: white;
-    padding: 1rem;
+    background-color: #333;
+    color: #fff;
     text-align: center;
+    padding: 10px 0;
+}
+
+header img {
+    width: 100px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+/* Centering the navigation bar items */
+nav {
+    background-color: #444;
+    overflow: hidden;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; /* This centers the nav items */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
+    margin: 0 15px; /* This adds space between the nav items */
 }
 
 nav ul li a {
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
 
 section {
@@ -64,16 +104,6 @@ img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 @media (max-width: 600px) {
