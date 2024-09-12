@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sermon</title>
+    <link rel="stylesheet" href="Sermons.css">
+</head>
+<body>
+    <div>
+        <img src="Images/Images/Great midrand logo.png" alt="Church Logo" id="ChurchLogo">
+    </div>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="Homepage2.html">Home</a></li>
+                <li><a href="sermons2.html">Sermons</a></li>
+                <li><a href="EventsPage.html">Events</a></li>     
+                <li><a href="Pastor.html">Pastors</a></li>
+                <li><a href="Locations.html">About</a></li>
+                <li><a href="institutions.html">Institutions</a></li>
+                <li><a href="Pastor.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <section id="sermons">
+            <h1>Recent Sermons</h1>
+
+            <div class="sermon-grid">
+                <div class="sermon-item">
+                    <a href="#" class="sermon-title">Sermon 1</a>
+                    <a href="pdf/sermon1.pdf" class="sermon-pdf">Download PDF</a>
+                </div>
+                <div class="sermon-item">
+                    <a href="#" class="sermon-title">Sermon 2</a>
+                    <a href="pdf/sermon2.pdf" class="sermon-pdf">Download PDF</a>
+                </div>
+                <div class="sermon-item">
+                    <a href="#" class="sermon-title">Sermon 3</a>
+                    <a href="pdf/sermon3.pdf" class="sermon-pdf">Download PDF</a>
+                </div>
+                <div class="sermon-item">
+                    <a href="#" class="sermon-title">Sermon 4</a>
+                    <a href="pdf/sermon4.pdf" class="sermon-pdf">Download PDF</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Contact information: +27 00 0000 000 </p>
+            <p>&copy; 2024 Our Church. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        const today = new Date();
+
+        // Function to get the date of the previous Sunday
+        function getPreviousSunday(date) {
+            let currentDay = date.getDay(); // Current day of the week (0 = Sunday)
+            let diff = currentDay === 0 ? 7 : currentDay; // If today is Sunday, get the last Sunday, otherwise calculate the last Sunday
+            let lastSunday = new Date(date);
+            lastSunday.setDate(date.getDate() - diff);
+            return lastSunday;
+        }
+
+        // Function to format the date as "Month Day, Year"
+        function formatDate(date) {
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString(undefined, options);
+        }
+
+        // Function to update sermons with the past 4 Sundays and add next Sunday on Saturday
+        function updateSermons() {
+            let sermonItems = document.querySelectorAll('.sermon-item');
+            let lastSunday = getPreviousSunday(today);
+            
+            // Update past 4 Sundays
+            for (let i = 0; i < 4; i++) {
+                let formattedDate = formatDate(lastSunday);
+                sermonItems[i].querySelector('.sermon-title').innerHTML = "Sermon for " + formattedDate;
+                sermonItems[i].querySelector('.sermon-pdf').href = "pdf/sermon" + (i + 1) + ".pdf"; // PDF links remain the same
+
+                // Get the Sunday before the last one
+                lastSunday.setDate(lastSunday.getDate() - 7);
+            }
+
+            // If today is Saturday (getDay() === 6), show the next Sunday as an additional sermon
+            if (today.getDay() === 6) {
+                let nextSunday = new Date();
+                nextSunday.setDate(today.getDate() + (7 - today.getDay())); // Calculate the next Sunday
+                
+                let formattedNextSunday = formatDate(nextSunday);
+                sermonItems[3].querySelector('.sermon-title').innerHTML = "Sermon for " + formattedNextSunday;
+                sermonItems[3].querySelector('.sermon-pdf').href = "pdf/sermon5.pdf"; // Update the PDF for next Sunday
+            }
+        }
+
+        // Run the function when the page loads
+        window.onload = updateSermons;
+    </script>
+
+</body>
+</html>

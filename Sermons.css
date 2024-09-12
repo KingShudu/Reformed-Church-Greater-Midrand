@@ -121,3 +121,55 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Sermon Grid Section */
+.sermon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.sermon-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    height: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.sermon-item:hover {
+    transform: scale(1.05);
+}
+
+.sermon-title {
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.sermon-pdf {
+    font-size: 1em;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.sermon-pdf:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness for the grid */
+@media (max-width: 600px) {
+    .sermon-item {
+        height: auto;
+        padding: 15px;
+    }
+}
