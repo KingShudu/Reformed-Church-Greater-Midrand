@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow: scroll;
 }
 
 header {
@@ -9,6 +10,7 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+    background-image: linear-gradient(to right, #5D31CE,#FA824C,#FF5A5F,#573A8F);
 }
  
 nav ul {
@@ -74,6 +76,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    background-image: linear-gradient(to right, #5D31CE,#FA824C,#FF5A5F,#573A8F);
 }
 
 @media (max-width: 600px) {
@@ -81,4 +84,62 @@ footer {
         display: block;
         margin: 0.5rem 0;
     }
+}
+
+.mySlides img {
+    width: 600px;
+    height: 500px;
+}
+
+.firstSection {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -20px;
+}
+
+.firstSectionImg {
+    opacity: 0.5;
+    width: 300px;
+    height: 300px;
+    margin: 1rem auto;
+}
+
+#PageTitle{
+    text-align: center;
+}
+
+.joinSection {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.joinSection button {
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.joinSection #joinButton {
+    background-color: #4CAF50; /* Green color for Join button */
+}
+
+.joinSection #donateButton {
+    background-color: #f44336; /* Red color for Donate button */
+}
+
+.joinSection #eventsButton {
+    background-color: #2196F3; /* Blue color for Events button */
+}
+
+section {
+    padding: 5 ; /* Remove vertical padding */
+    text-align: center;
 }
