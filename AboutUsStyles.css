@@ -8,7 +8,7 @@
 header {
     background-color: #333;
     color: #fff;
-    display: flex;
+    text-align: center;
     align-items: center;
     padding: 10px 20px;
     background-image: linear-gradient(to right, #5D31CE,#FA824C,#FF5A5F,#573A8F);
@@ -24,15 +24,18 @@ header nav ul {
     display: flex;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 header nav ul li {
     margin-right: 20px;
+    align-items: center;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    align-items: center;
 }
 
 main {
@@ -64,7 +67,7 @@ main .about h1 {
 
 .grid-item img {
     max-width: 100%;
-    height: auto;
+    height: 600px;
 }
 
 footer {
@@ -107,4 +110,23 @@ footer .footer-content .social-icons a img {
 
 footer p {
     margin: 20px 0 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
 }
