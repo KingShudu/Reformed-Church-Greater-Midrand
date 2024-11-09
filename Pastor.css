@@ -3,14 +3,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    overflow: scroll;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background: #333;
+    color: white;
+    padding: 1rem;
     text-align: center;
-    padding: 10px 0;
+    background-image: linear-gradient(to right, #5D31CE,#FA824C,#FF5A5F,#573A8F);
 }
 
 header img {
@@ -27,7 +28,7 @@ header h1 {
 
 /* Centering the navigation bar items */
 nav {
-    background-color: #444;
+    
     overflow: hidden;
 }
 
@@ -60,11 +61,14 @@ main {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background: #333;
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #5D31CE,#FA824C,#FF5A5F,#573A8F);
 }
 
 /* Specific styling for the pastor's section */
