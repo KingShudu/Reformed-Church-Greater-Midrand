@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow: scroll;
 }
 
 header {
@@ -9,6 +10,7 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+    background-image: linear-gradient(to right, #5D31CE,#FA824C,#FF5A5F,#573A8F);
 }
 
 nav ul {
@@ -71,9 +73,10 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+    background-image: linear-gradient(to right, #5D31CE,#FA824C,#FF5A5F,#573A8F);
 }
 
 @media (max-width: 600px) {
